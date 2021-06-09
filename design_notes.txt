@@ -1,0 +1,41 @@
+ShortUrl
+
+id
+user_id
+original
+short
+slug
+
+
+
+validate original URL
+
+we need BASE_URL = 'http://localhost:3000/api/v1'
+
+we need to genereate a unique id (slug)
+
+remember to check if the original URL already exists !
+
+remember before_action :authenticate_user!
+
+short = "#{BASE_URL}/#{slug}"
+
+
+JSON
+
+POST create ShortUrl ('/api/v1/shorten')
+GET redirect (id is slug; '/slug')
+
+
+CRUD:
+index
+new
+create
+(read) show
+edit
+update
+destroy
+
+WHAT I NEED:
+create
+(MAYBE) show
